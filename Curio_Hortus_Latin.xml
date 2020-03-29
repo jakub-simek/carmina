@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="hc" matchPattern="(.+)"
+               replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"
+            > </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ana="hc:Page" n="304">
+         <graphic url="http://daten.digitale-sammlungen.de/bsb00029026/image_304"></graphic>
+      </surface>
+      <surface ana="hc:Page" n="305">
+         <graphic url="https://daten.digitale-sammlungen.de/bsb00029026/image_305"></graphic>
+      </surface>
+      <surface ana="hc:Page" n="306">
+         <graphic url="https://daten.digitale-sammlungen.de/bsb00029026/image_306"></graphic>
+      </surface>
+   </facsimile>
+   <text ana="hc:Poem">
+      <body>
+         <pb n="304"></pb>
+         <head>
+            <lb n="9"/>OTTONIDIS ILLV<metamark ana="hc:Hyphen">-</metamark>
+            <lb n="10"/>ſtriſs. Palatini in Suburbio Edel-
+            <lb n="11"/>bergenſi Hortus.
+         </head>
+         <l n="1">
+            <lb n="12" rendition="hc:VerticalSpaceBefore"/><w><hei:initial hei:heightLines="3" hei:indents="2">A</hei:initial>Lcinoï</w> magnus uiridaria cantet Homerus,
+         </l>
+         <l n="2">
+            <lb n="13"/>Quiq́; uolet laude Heſperidū uel Adonidis ornet.
+         </l>
+         <l n="3">
+            <lb n="14"/>Ipſe mihi faciles ſi Muſæ ad uota uenirent,
+         </l>
+         <l n="4">
+            <lb n="15"/>Carmine honorarem Palatini Ottonidis hortum,
+         </l>
+         <l n="5">
+            <lb n="16"/>In quo perpetuum uer ſpirat, &amp; omnibus anni
+         </l>
+         <l n="6">
+            <lb n="17"/>Temporibus, cernis naturam pingere flores,
+         </l>
+         <l n="7">
+            <lb n="18"/>Tunc etiam cum Bruma riget, Titanq́; per auſtri
+         </l>
+         <l n="8">
+            <lb n="19"/>Signa meat, gelida quando niue cuncta teguntur,
+         </l>
+         <l n="9">
+            <lb n="20"/>Et plantæ nostro fugiunt, arentq́; ſub axe
+         </l>
+         <l n="10">
+            <lb n="21"/>In ſolo hoc uernant geniali Principis horto
+         </l>
+         <l n="11">
+            <lb n="22"/>Illæ, ibi diffuſis uiduatur frondibus arbor
+         </l>
+         <l n="12">
+            <lb n="23"/>Nunquam, nec pereunt ibi tempeſtatibus ullis
+         </l>
+         <l n="13">
+            <lb n="24"/>Herbæ, ope cultoris, qua ſemper gratia florum
+         </l>
+         <fw ana="hc:Catchword">
+            <lb n="25" rendition="hc:FlushRight"/>Blanditur
+         </fw>
+         <pb n="305"/>
+         <l n="14">
+            <lb n="1"/>Blanditur, uitam qua Tellus concipit arte, &amp;
+         </l>
+         <l n="15">
+            <lb n="2"/>Fundit odoriferos uario de germine fructus,
+         </l>
+         <l n="16">
+            <lb n="3"/>Qua poſsis dulces guſtare ex arbore ficus,
+         </l>
+         <l n="17">
+            <lb n="4"/>Et lauri baccas legere, &amp; frangantia mire
+         </l>
+         <l n="18">
+            <lb n="5"/>(Rara alibi inuentu) ſpectare &amp; carpere mala,
+         </l>
+         <l n="19">
+            <lb n="6"/>Punica præcipue ſedantia pectoris æſtus,
+         </l>
+         <l n="20">
+            <lb n="7"/>Atq; illa è citro, ſpecie oui, pendula odore
+         </l>
+         <l n="21">
+            <lb n="8"/>Et ſucco peſtis rapidæ pellentia flatus.
+         </l>
+         <l n="22">
+            <lb n="9"/>Omnia quæ tepidis capiunt fomenta caminis,
+         </l>
+         <l n="23">
+            <lb n="10"/>Vnde etiam uitale ſuum ſibi cætera multa
+         </l>
+         <l n="24">
+            <lb n="11"/>Nata uoluptati, medicos quoq; conſita ad uſus,
+         </l>
+         <l n="25">
+            <lb n="12"/>Robur conſeruant, alijs quæ mortua in hortis
+         </l>
+         <l n="26">
+            <lb n="13"/>Conſpiciuntur. Vbi uero cum cornibus annum
+         </l>
+         <l n="27">
+            <lb n="14"/>Auratis aperit Taurus, ſol cunctaq́; pingit
+         </l>
+         <l n="28">
+            <lb n="15"/>Prata. Quid ô bone, ibi non eſt ſpectabile, quid non
+         </l>
+         <l n="29">
+            <lb n="16"/>Gratum oculis? Nardi hîc ſpicantur, Ariſtas
+         </l>
+         <l n="30">
+            <lb n="17"/>In tenues ſurgunt Saliunca lauandula. Spirant
+         </l>
+         <l n="31">
+            <lb n="18"/>Suauiter hîc Mentæ, Libanotis, Amaracus, atq;
+         </l>
+         <l n="32">
+            <lb n="19"/>Baccharis &amp; flores (quos Nymphæ Caryophylla
+         </l>
+         <l n="33">
+            <lb n="20"/>Appellant) thymus, orminium, thymbra, ozima, ſtæchas
+         </l>
+         <l n="34">
+            <lb n="21"/>Lilia puniceas inter uiolasq́; roſasq́;,
+         </l>
+         <l n="35">
+            <lb n="22"/>Ac ſimiles multæ, quas haud numeraueris omnes
+         </l>
+         <l n="36">
+            <lb n="23"/>Huius delicias &amp; opes tam diuitis horti,
+         </l>
+         <l n="37">
+            <lb n="24"/>Cuius in Areolis diſcretis ordine pulchro,
+         </l>
+         <l n="38">
+            <lb n="25"/>Neſcio quid deſit, ſeu quærat Pitius eſcas
+         </l>
+         <l n="39">
+            <lb n="26"/>Mulceat unde gulam, ſeu quærat oluſcula coniunx
+         </l>
+         <l n="40">
+            <lb n="27"/>Quæ ſuper infuſo pingui manduntur aceto,
+         </l>
+         <fw ana="hc:Catchword">
+            <lb n="28" rendition="hc:FlushRight"/>Aut
+         </fw>
+         
+         <pb n="306"/>
+         
+         <l n="41">
+            <lb n="1"/>Aut ſcolymos coctos uelit uncto in iure marito
+         </l>
+         <l n="42">
+            <lb n="2"/>Ad Venerem ſegni, ſiue elixare minutal.
+         </l>
+         <l n="43">
+            <lb n="3"/>Copia coctilium magna hîc ſuffruticat horum,
+         </l>
+         <l n="44">
+            <lb n="4"/>Quæ Domini in menſas Cocus infert arte parata,
+         </l>
+         <l n="45">
+            <lb n="5"/>Intyba, Lactucas, Rumices, Naſturcia, Betam,
+         </l>
+         <l n="46">
+            <lb n="6"/>Fœniculum, Oxalida, Hyſſopum, Crambenq́; Catonis,
+         </l>
+         <l n="47">
+            <lb n="7"/>Napos, Melones, Bulbos, Apiumq́; &amp; Anethum,
+         </l>
+         <l n="48">
+            <lb n="8"/>Quæ ſi fortè alijs Annona innaſcitur hortis
+         </l>
+         <l n="49">
+            <lb n="9"/>Largè etiam, tamen haud illis communia ſpectas
+         </l>
+         <l n="50">
+            <lb n="10"/>Cætera, tot nuſquam ſpectas peregrina, calentem
+         </l>
+         <l n="51">
+            <lb n="11"/>Nuſquam ſic hyemem, tot &amp; ambulacra inter odores,
+         </l>
+         <l n="52">
+            <lb n="12"/>Tam uiſuntur ad ornatum topiaria nuſquam,
+         </l>
+         <l n="53">
+            <lb n="13"/>Nuſquam ſic uitreas æternis uſibus undas
+         </l>
+         <l n="54">
+            <lb n="14"/>Canna ſub Vuifera præbet teſtudine, plenis
+         </l>
+         <l n="55">
+            <lb n="15"/>Quas buccis efflant, mingunt, torquent &amp; in altum
+         </l>
+         <l n="56">
+            <lb n="16"/>Tanquam ibi ludentes, conflati ex ære puelli.
+         </l>
+      </body>
+   </text>
+</TEI>
