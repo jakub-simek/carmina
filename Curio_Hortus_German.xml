@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="hc" matchPattern="(.+)"
+               replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"
+            > </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+   </teiHeader>
+   <text ana="hc:Poem">
+      <body>
+         <head>Des ruhmreichen Ottheinrich von der Pfalz Garten in der Heidelberger Vorstadt</head>
+         <l n="1">Lasst den großen Homer des Alkinoos Gärten besingen</l>
+         <l n="2">jene der Hesperiden, des Adonis lobe, wer wolle.</l>
+         <l n="3">Ich, wenn kämen die Musen wohlgesinnt mir zu Hilfe,</l>
+         <l n="4">möchte im Lied des Ottheinrich Garten, des Pfalzgrafen, rühmen,</l>
+         <l n="5">in dem ewiger Frühling weht, in jeder Saison du</l>
+         <l n="6"></l>
+         <l n="7"></l>
+         <l n="8"></l>
+         <l n="9"></l>
+         <l n="10"></l>
+         <l n="11"></l>
+         <l n="12"></l>
+         <l n="13"></l>
+         <l n="14"></l>
+         <l n="15"></l>
+         <l n="16"></l>
+         <l n="17"></l>
+         <l n="18"></l>
+         <l n="19"></l>
+         <l n="20"></l>
+         <l n="21"></l>
+         <l n="22"></l>
+         <l n="23"></l>
+         <l n="24"></l>
+         <l n="25"></l>
+         <l n="26"></l>
+         <l n="27"></l>
+         <l n="28"></l>
+         <l n="29"></l>
+         <l n="30"></l>
+         <l n="31"></l>
+         <l n="32"></l>
+         <l n="33"></l>
+         <l n="34"></l>
+         <l n="35"></l>
+         <l n="36"></l>
+         <l n="37"></l>
+         <l n="38"></l>
+         <l n="39"></l>
+         <l n="40"></l>
+         <l n="41"></l>
+         <l n="42"></l>
+         <l n="43"></l>
+         <l n="44"></l>
+         <l n="45"></l>
+         <l n="46"></l>
+         <l n="47"></l>
+         <l n="48"></l>
+         <l n="49"></l>
+         <l n="50"></l>
+         <l n="51"></l>
+         <l n="52"></l>
+         <l n="53"></l>
+         <l n="54"></l>
+         <l n="55"></l>
+         <l n="56"></l>
+      </body>
+   </text>
+</TEI>
