@@ -3,6 +3,12 @@
 <?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
+<!DOCTYPE TEI 
+[
+<!ENTITY % heiEDITIONS_entities SYSTEM "https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/declarations/heieditions-entities.txt">
+%heiEDITIONS_entities; ]>
+
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
    xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
    <teiHeader>
@@ -27,25 +33,57 @@
    </teiHeader>
    <facsimile>
       <surface ana="hc:Page" n="304">
-         <graphic url="http://daten.digitale-sammlungen.de/bsb00029026/image_304"></graphic>
+         <graphic url="http://daten.digitale-sammlungen.de/bsb00029026/image_304"/>
       </surface>
       <surface ana="hc:Page" n="305">
-         <graphic url="https://daten.digitale-sammlungen.de/bsb00029026/image_305"></graphic>
+         <graphic url="https://daten.digitale-sammlungen.de/bsb00029026/image_305"/>
       </surface>
       <surface ana="hc:Page" n="306">
-         <graphic url="https://daten.digitale-sammlungen.de/bsb00029026/image_306"></graphic>
+         <graphic url="https://daten.digitale-sammlungen.de/bsb00029026/image_306"/>
       </surface>
    </facsimile>
    <text ana="hc:Poem">
       <body>
-         <pb n="304"></pb>
+         <pb n="304"/>
          <head>
-            <lb n="9"/>OTTONIDIS ILLV<metamark ana="hc:Hyphen">-</metamark>
-            <lb n="10"/>ſtriſs. Palatini in Suburbio Edel-
-            <lb n="11"/>bergenſi Hortus.
+            <lb n="9"/>
+            <w>OTTONIDIS</w>
+            <c> </c>
+            <w>ILLV<metamark ana="hc:Hyphen">-</metamark><lb n="10" break="no"/>ſtriſs<choice>
+                  <am>.</am>
+                  <ex>imi</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>Palatini</w>
+            <c> </c>
+            <w>in</w>
+            <c> </c>
+            <w>Suburbio</w>
+            <c> </c>
+            <w>Edel<metamark ana="hc:Hyphen">-</metamark><lb n="11" break="no"/>bergenſi</w>
+            <c> </c>
+            <w>Hortus</w>
+            <pc>.</pc>
          </head>
          <l n="1">
-            <lb n="12" rendition="hc:VerticalSpaceBefore"/><w><hei:initial hei:heightLines="3" hei:indents="2">A</hei:initial>Lcinoï</w> magnus uiridaria cantet Homerus,
+            <lb n="12" rendition="hc:VerticalSpaceBefore"/>
+            <w><hei:initial hei:heightLines="3" hei:indents="2">A</hei:initial><choice>
+                  <orig>L</orig>
+                  <reg>l</reg>
+               </choice>cino<choice>
+                  <orig>ï</orig>
+                  <reg>i</reg>
+               </choice></w>
+            <c> </c>
+            <w>magnus</w>
+            <c> </c>
+            <w>uiridaria</w>
+            <c> </c>
+            <w>cantet</w>
+            <c> </c>
+            <w>Homerus</w>
+            <pc>,</pc>
             <!-- 
                zum Topos:
                "49 Ab his superest reverti ad hortorum curam et suapte natura memorandam et quoniam antiquitas nihil prius mirata est, quam Hesperidum hortos ac regum Adonidis et Alcinoi item que pensiles, sive illos Semiramis sive Assyriae rex Syrus fecit, de quorum opere alio volumine dicemus."
@@ -57,138 +95,739 @@
             -->
          </l>
          <l n="2">
-            <lb n="13"/>Quiq́; uolet laude Heſperidū uel Adonidis ornet.
+            <lb n="13"/>
+            <w>Quiq<choice>
+                  <am>&combacute;;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>uolet</w>
+            <c> </c>
+            <w>laude</w>
+            <c> </c>
+            <w>Heſperidu<choice>
+                  <am>&bar;</am>
+                  <ex>m</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>uel</w>
+            <c> </c>
+            <w>Adonidis</w>
+            <c> </c>
+            <w>ornet</w>
+            <pc>.</pc>
          </l>
          <l n="3">
-            <lb n="14"/>Ipſe mihi faciles ſi Muſæ ad uota uenirent,
+            <lb n="14"/>
+            <w>Ipſe</w>
+            <c> </c>
+            <w>mihi</w>
+            <c> </c>
+            <w>faciles</w>
+            <c> </c>
+            <w>ſi</w>
+            <c> </c>
+            <w>Muſæ</w>
+            <c> </c>
+            <w>ad</w>
+            <c> </c>
+            <w>uota</w>
+            <c> </c>
+            <w>uenirent</w>
+            <pc>,</pc>
          </l>
          <l n="4">
-            <lb n="15"/>Carmine honorarem Palatini Ottonidis hortum,
+            <lb n="15"/>
+            <w>Carmine</w>
+            <c> </c>
+            <w>honorarem</w>
+            <c> </c>
+            <w>Palatini</w>
+            <c> </c>
+            <w>Ottonidis</w>
+            <c> </c>
+            <w>hortum</w>
+            <pc>,</pc>
          </l>
          <l n="5">
-            <lb n="16"/>In quo perpetuum uer ſpirat, &amp; omnibus anni
+            <lb n="16"/>
+            <w>In</w>
+            <c> </c>
+            <w>quo</w>
+            <c> </c>
+            <w>perpetuum</w>
+            <c> </c>
+            <w>uer</w>
+            <c> </c>
+            <w>ſpirat</w>
+            <pc>,</pc>
+            <c> </c>
+            <w><choice><am>&amp;</am><ex>et</ex></choice></w>
+            <c> </c>
+            <w>omnibus</w>
+            <c> </c>
+            <w>anni</w>
          </l>
          <l n="6">
-            <lb n="17"/>Temporibus, cernis naturam pingere flores,
+            <lb n="17"/>
+            <w>Temporibus</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>cernis</w>
+            <c> </c>
+            <w>naturam</w>
+            <c> </c>
+            <w>pingere</w>
+            <c> </c>
+            <w>flores</w>
+            <pc>,</pc>
          </l>
          <l n="7">
-            <lb n="18"/>Tunc etiam cum Bruma riget, Titanq́; per auſtri
+            <lb n="18"/>
+            <w>Tunc</w>
+            <c> </c>
+            <w>etiam</w>
+            <c> </c>
+            <w>cum</w>
+            <c> </c>
+            <w>Bruma</w>
+            <c> </c>
+            <w>riget</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Titanq<choice>
+                  <am>&combacute;;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>per</w>
+            <c> </c>
+            <w>auſtri</w>
          </l>
          <l n="8">
-            <lb n="19"/>Signa meat, gelida quando niue cuncta teguntur,
+            <lb n="19"/>
+            <w>Signa</w>
+            <c> </c>
+            <w>meat</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>gelida</w>
+            <c> </c>
+            <w>quando</w>
+            <c> </c>
+            <w>niue</w>
+            <c> </c>
+            <w>cuncta</w>
+            <c> </c>
+            <w>teguntur</w>
+            <pc>,</pc>
          </l>
          <l n="9">
-            <lb n="20"/>Et plantæ nostro fugiunt, arentq́; ſub axe
+            <lb n="20"/>
+            <w>Et</w>
+            <c> </c>
+            <w>plantæ</w>
+            <c> </c>
+            <w>nostro</w>
+            <c> </c>
+            <w>fugiunt</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>arentq<choice>
+                  <am>&combacute;;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>ſub</w>
+            <c> </c>
+            <w>axe</w>
          </l>
          <l n="10">
-            <lb n="21"/>In ſolo hoc uernant geniali Principis horto
+            <lb n="21"/>
+            <w>In</w>
+            <c> </c>
+            <w>ſolo</w>
+            <c> </c>
+            <w>hoc</w>
+            <c> </c>
+            <w>uernant</w>
+            <c> </c>
+            <w>geniali</w>
+            <c> </c>
+            <w>Principis</w>
+            <c> </c>
+            <w>horto</w>
          </l>
          <l n="11">
-            <lb n="22"/>Illæ, ibi diffuſis uiduatur frondibus arbor
+            <lb n="22"/>
+            <w>Illæ</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ibi</w>
+            <c> </c>
+            <w>diffuſis</w>
+            <c> </c>
+            <w>uiduatur</w>
+            <c> </c>
+            <w>frondibus</w>
+            <c> </c>
+            <w>arbor</w>
          </l>
          <l n="12">
-            <lb n="23"/>Nunquam, nec pereunt ibi tempeſtatibus ullis
+            <lb n="23"/>
+            <w>Nunquam</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>nec</w>
+            <c> </c>
+            <w>pereunt</w>
+            <c> </c>
+            <w>ibi</w>
+            <c> </c>
+            <w>tempeſtatibus</w>
+            <c> </c>
+            <w>ullis</w>
          </l>
          <l n="13">
-            <lb n="24"/>Herbæ, ope cultoris, qua ſemper gratia florum
+            <lb n="24"/>
+            <w>Herbæ</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ope</w>
+            <c> </c>
+            <w>cultoris</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>qua</w>
+            <c> </c>
+            <w>ſemper</w>
+            <c> </c>
+            <w>gratia</w>
+            <c> </c>
+            <w>florum</w>
          </l>
          <fw ana="hc:Catchword">
-            <lb n="25" rendition="hc:FlushRight"/>Blanditur
+            <lb n="25" rendition="hc:FlushRight"/>
+            <w>Blanditur</w>
          </fw>
          <pb n="305"/>
          <l n="14">
-            <lb n="1"/>Blanditur, uitam qua Tellus concipit arte, &amp;
+            <lb n="1"/>
+            <w>Blanditur</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>uitam</w>
+            <c> </c>
+            <w>qua</w>
+            <c> </c>
+            <w>Tellus</w>
+            <c> </c>
+            <w>concipit</w>
+            <c> </c>
+            <w>arte</w>
+            <pc>,</pc>
+            <c> </c>
+            <w><choice><am>&amp;</am><ex>et</ex></choice></w>
          </l>
          <l n="15">
-            <lb n="2"/>Fundit odoriferos uario de germine fructus,
+            <lb n="2"/>
+            <w>Fundit</w>
+            <c> </c>
+            <w>odoriferos</w>
+            <c> </c>
+            <w>uario</w>
+            <c> </c>
+            <w>de</w>
+            <c> </c>
+            <w>germine</w>
+            <c> </c>
+            <w>fructus</w>
+            <pc>,</pc>
          </l>
          <l n="16">
-            <lb n="3"/>Qua poſsis dulces guſtare ex arbore ficus,
+            <lb n="3"/>
+            <w>Qua</w>
+            <c> </c>
+            <w>poſsis</w>
+            <c> </c>
+            <w>dulces</w>
+            <c> </c>
+            <w>guſtare</w>
+            <c> </c>
+            <w>ex</w>
+            <c> </c>
+            <w>arbore</w>
+            <c> </c>
+            <w>ficus</w>
+            <pc>,</pc>
          </l>
          <l n="17">
-            <lb n="4"/>Et lauri baccas legere, &amp; frangantia mire
+            <lb n="4"/>
+            <w>Et</w>
+            <c> </c>
+            <w>lauri</w>
+            <c> </c>
+            <w>baccas</w>
+            <c> </c>
+            <w>legere</w>
+            <pc>,</pc>
+            <c> </c>
+            <w><choice><am>&amp;</am><ex>et</ex></choice></w>
+            <c> </c>
+            <w>frangantia</w>
+            <c> </c>
+            <w>mire</w>
          </l>
          <l n="18">
-            <lb n="5"/>(Rara alibi inuentu) ſpectare &amp; carpere mala,
+            <lb n="5"/>
+            <pc>(</pc>
+            <w>Rara</w>
+            <c> </c>
+            <w>alibi</w>
+            <c> </c>
+            <w>inuentu</w>
+            <pc>)</pc>
+            <c> </c>
+            <w>ſpectare</w>
+            <c> </c>
+            <w><choice><am>&amp;</am><ex>et</ex></choice></w>
+            <c> </c>
+            <w>carpere</w>
+            <c> </c>
+            <w>mala</w>
+            <pc>,</pc>
          </l>
          <l n="19">
-            <lb n="6"/>Punica præcipue ſedantia pectoris æſtus,
+            <lb n="6"/>
+            <w>Punica</w>
+            <c> </c>
+            <w>præcipue</w>
+            <c> </c>
+            <w>ſedantia</w>
+            <c> </c>
+            <w>pectoris</w>
+            <c> </c>
+            <w>æſtus</w>
+            <pc>,</pc>
          </l>
          <l n="20">
-            <lb n="7"/>Atq; illa è citro, ſpecie oui, pendula odore
+            <lb n="7"/>
+            <w>Atq<choice>
+                  <am>;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>illa</w>
+            <c> </c>
+            <w>è</w>
+            <c> </c>
+            <w>citro</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ſpecie</w>
+            <c> </c>
+            <w>oui</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>pendula</w>
+            <c> </c>
+            <w>odore</w>
          </l>
          <l n="21">
-            <lb n="8"/>Et ſucco peſtis rapidæ pellentia flatus.
+            <lb n="8"/>
+            <w>Et</w>
+            <c> </c>
+            <w>ſucco</w>
+            <c> </c>
+            <w>peſtis</w>
+            <c> </c>
+            <w>rapidæ</w>
+            <c> </c>
+            <w>pellentia</w>
+            <c> </c>
+            <w>flatus</w>
+            <pc>.</pc>
          </l>
          <l n="22">
-            <lb n="9"/>Omnia quæ tepidis capiunt fomenta caminis,
+            <lb n="9"/>
+            <w>Omnia</w>
+            <c> </c>
+            <w>quæ</w>
+            <c> </c>
+            <w>tepidis</w>
+            <c> </c>
+            <w>capiunt</w>
+            <c> </c>
+            <w>fomenta</w>
+            <c> </c>
+            <w>caminis</w>
+            <pc>,</pc>
          </l>
          <l n="23">
-            <lb n="10"/>Vnde etiam uitale ſuum ſibi cætera multa
+            <lb n="10"/>
+            <w>Vnde</w>
+            <c> </c>
+            <w>etiam</w>
+            <c> </c>
+            <w>uitale</w>
+            <c> </c>
+            <w>ſuum</w>
+            <c> </c>
+            <w>ſibi</w>
+            <c> </c>
+            <w>cætera</w>
+            <c> </c>
+            <w>multa</w>
          </l>
          <l n="24">
-            <lb n="11"/>Nata uoluptati, medicos quoq; conſita ad uſus,
+            <lb n="11"/>
+            <w>Nata</w>
+            <c> </c>
+            <w>uoluptati</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>medicos</w>
+            <c> </c>
+            <w>quoq<choice>
+                  <am>;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>conſita</w>
+            <c> </c>
+            <w>ad</w>
+            <c> </c>
+            <w>uſus</w>
+            <pc>,</pc>
          </l>
          <l n="25">
-            <lb n="12"/>Robur conſeruant, alijs quæ mortua in hortis
+            <lb n="12"/>
+            <w>Robur</w>
+            <c> </c>
+            <w>conſeruant</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>alijs</w>
+            <c> </c>
+            <w>quæ</w>
+            <c> </c>
+            <w>mortua</w>
+            <c> </c>
+            <w>in</w>
+            <c> </c>
+            <w>hortis</w>
          </l>
          <l n="26">
-            <lb n="13"/>Conſpiciuntur. Vbi uero cum cornibus annum
+            <lb n="13"/>
+            <w>Conſpiciuntur</w>
+            <pc>.</pc>
+            <c> </c>
+            <w>Vbi</w>
+            <c> </c>
+            <w>uero</w>
+            <c> </c>
+            <w>cum</w>
+            <c> </c>
+            <w>cornibus</w>
+            <c> </c>
+            <w>annum</w>
          </l>
          <l n="27">
-            <lb n="14"/>Auratis aperit Taurus, ſol cunctaq́; pingit
+            <lb n="14"/>
+            <w>Auratis</w>
+            <c> </c>
+            <w>aperit</w>
+            <c> </c>
+            <w>Taurus</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ſol</w>
+            <c> </c>
+            <w>cunctaq<choice>
+                  <am>&combacute;;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>pingit</w>
          </l>
          <l n="28">
-            <lb n="15"/>Prata. Quid ô bone, ibi non eſt ſpectabile, quid non
+            <lb n="15"/>
+            <w>Prata</w>
+            <pc>.</pc>
+            <c> </c>
+            <w>Quid</w>
+            <c> </c>
+            <w>ô</w>
+            <c> </c>
+            <w>bone</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ibi</w>
+            <c> </c>
+            <w>non</w>
+            <c> </c>
+            <w>eſt</w>
+            <c> </c>
+            <w>ſpectabile</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>quid</w>
+            <c> </c>
+            <w>non</w>
          </l>
          <l n="29">
-            <lb n="16"/>Gratum oculis? Nardi hîc ſpicantur, Ariſtas
+            <lb n="16"/>
+            <w>Gratum</w>
+            <c> </c>
+            <w>oculis</w>
+            <pc>?</pc>
+            <c> </c>
+            <w>Nardi</w>
+            <c> </c>
+            <w>hîc</w>
+            <c> </c>
+            <w>ſpicantur</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Ariſtas</w>
          </l>
          <l n="30">
-            <lb n="17"/>In tenues ſurgunt Saliunca lauandula. Spirant
+            <lb n="17"/>
+            <w>In</w>
+            <c> </c>
+            <w>tenues</w>
+            <c> </c>
+            <w>ſurgunt</w>
+            <c> </c>
+            <w>Saliunca</w>
+            <c> </c>
+            <w>lauandula</w>
+            <pc>.</pc>
+            <c> </c>
+            <w>Spirant</w>
          </l>
          <l n="31">
-            <lb n="18"/>Suauiter hîc Mentæ, Libanotis, Amaracus, atq;
+            <lb n="18"/>
+            <w>Suauiter</w>
+            <c> </c>
+            <w>hîc</w>
+            <c> </c>
+            <w>Mentæ</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Libanotis</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Amaracus</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>atq<choice>
+                  <am>;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
          </l>
          <l n="32">
-            <lb n="19"/>Baccharis &amp; flores (quos Nymphæ Caryophylla
+            <lb n="19"/>
+            <w>Baccharis</w>
+            <c> </c>
+            <w><choice><am>&amp;</am><ex>et</ex></choice></w>
+            <c> </c>
+            <w>flores</w>
+            <c> </c>
+            <pc>(</pc>
+            <w>quos</w>
+            <c> </c>
+            <w>Nymphæ</w>
+            <c> </c>
+            <w>Caryophylla</w>
          </l>
          <l n="33">
-            <lb n="20"/>Appellant) thymus, orminium, thymbra, ozima, ſtæchas
+            <lb n="20"/>
+            <w>Appellant</w>
+            <pc>)</pc>
+            <c> </c>
+            <w>thymus</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>orminium</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>thymbra</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ozima</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ſtæchas</w>
          </l>
          <l n="34">
-            <lb n="21"/>Lilia puniceas inter uiolasq́; roſasq́;,
+            <lb n="21"/>
+            <w>Lilia</w>
+            <c> </c>
+            <w>puniceas</w>
+            <c> </c>
+            <w>inter</w>
+            <c> </c>
+            <w>uiolasq<choice>
+                  <am>&combacute;;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>roſasq<choice>
+                  <am>&combacute;;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <pc>,</pc>
          </l>
          <l n="35">
-            <lb n="22"/>Ac ſimiles multæ, quas haud numeraueris omnes
+            <lb n="22"/>
+            <w>Ac</w>
+            <c> </c>
+            <w>ſimiles</w>
+            <c> </c>
+            <w>multæ</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>quas</w>
+            <c> </c>
+            <w>haud</w>
+            <c> </c>
+            <w>numeraueris</w>
+            <c> </c>
+            <w>omnes</w>
          </l>
          <l n="36">
-            <lb n="23"/>Huius delicias &amp; opes tam diuitis horti,
+            <lb n="23"/>
+            <w>Huius</w>
+            <c> </c>
+            <w>delicias</w>
+            <c> </c>
+            <w><choice><am>&amp;</am><ex>et</ex></choice></w>
+            <c> </c>
+            <w>opes</w>
+            <c> </c>
+            <w>tam</w>
+            <c> </c>
+            <w>diuitis</w>
+            <c> </c>
+            <w>horti</w>
+            <pc>,</pc>
          </l>
          <l n="37">
-            <lb n="24"/>Cuius in Areolis diſcretis ordine pulchro,
+            <lb n="24"/>
+            <w>Cuius</w>
+            <c> </c>
+            <w>in</w>
+            <c> </c>
+            <w>Areolis</w>
+            <c> </c>
+            <w>diſcretis</w>
+            <c> </c>
+            <w>ordine</w>
+            <c> </c>
+            <w>pulchro</w>
+            <pc>,</pc>
          </l>
          <l n="38">
-            <lb n="25"/>Neſcio quid deſit, ſeu quærat Pitius eſcas
+            <lb n="25"/>
+            <w>Neſcio</w>
+            <c> </c>
+            <w>quid</w>
+            <c> </c>
+            <w>deſit</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ſeu</w>
+            <c> </c>
+            <w>quærat</w>
+            <c> </c>
+            <w>Pitius</w>
+            <c> </c>
+            <w>eſcas</w>
          </l>
          <l n="39">
-            <lb n="26"/>Mulceat unde gulam, ſeu quærat oluſcula coniunx
+            <lb n="26"/>
+            <w>Mulceat</w>
+            <c> </c>
+            <w>unde</w>
+            <c> </c>
+            <w>gulam</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ſeu</w>
+            <c> </c>
+            <w>quærat</w>
+            <c> </c>
+            <w>oluſcula</w>
+            <c> </c>
+            <w>coniunx</w>
          </l>
          <l n="40">
-            <lb n="27"/>Quæ ſuper infuſo pingui manduntur aceto,
+            <lb n="27"/>
+            <w>Quæ</w>
+            <c> </c>
+            <w>ſuper</w>
+            <c> </c>
+            <w>infuſo</w>
+            <c> </c>
+            <w>pingui</w>
+            <c> </c>
+            <w>manduntur</w>
+            <c> </c>
+            <w>aceto</w>
+            <pc>,</pc>
          </l>
          <fw ana="hc:Catchword">
-            <lb n="28" rendition="hc:FlushRight"/>Aut
+            <lb n="28" rendition="hc:FlushRight"/>
+            <w>Aut</w>
          </fw>
-         
+
          <pb n="306"/>
-         
+
          <l n="41">
-            <lb n="1"/>Aut ſcolymos coctos uelit uncto in iure marito
+            <lb n="1"/>
+            <w>Aut</w>
+            <c> </c>
+            <w>ſcolymos</w>
+            <c> </c>
+            <w>coctos</w>
+            <c> </c>
+            <w>uelit</w>
+            <c> </c>
+            <w>uncto</w>
+            <c> </c>
+            <w>in</w>
+            <c> </c>
+            <w>iure</w>
+            <c> </c>
+            <w>marito</w>
             <!-- scolymus: Artischocke -->
          </l>
          <l n="42">
-            <lb n="2"/>Ad Venerem ſegni, ſiue elixare minutal.
+            <lb n="2"/>
+            <w>Ad</w>
+            <c> </c>
+            <w>Venerem</w>
+            <c> </c>
+            <w>ſegni</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>ſiue</w>
+            <c> </c>
+            <w>elixare</w>
+            <c> </c>
+            <w>minutal</w>
+            <pc>.</pc>
             <!-- 
             elixare: to boil thoroughly, seethe (late Lat.), Apic. 2, 1; 3, 6 al.
             minutal: A dish of minced meat (post-Aug.), Juv. 14, 129; Mart. 11, 31, 11.
@@ -196,46 +835,248 @@
             -->
          </l>
          <l n="43">
-            <lb n="3"/>Copia coctilium magna hîc ſuffruticat horum,
+            <lb n="3"/>
+            <w>Copia</w>
+            <c> </c>
+            <w>coctilium</w>
+            <c> </c>
+            <w>magna</w>
+            <c> </c>
+            <w>hîc</w>
+            <c> </c>
+            <w>ſuffruticat</w>
+            <c> </c>
+            <w>horum</w>
+            <pc>,</pc>
          </l>
          <l n="44">
-            <lb n="4"/>Quæ Domini in menſas Cocus infert arte parata,
+            <lb n="4"/>
+            <w>Quæ</w>
+            <c> </c>
+            <w>Domini</w>
+            <c> </c>
+            <w>in</w>
+            <c> </c>
+            <w>menſas</w>
+            <c> </c>
+            <w>Cocus</w>
+            <c> </c>
+            <w>infert</w>
+            <c> </c>
+            <w>arte</w>
+            <c> </c>
+            <w>parata</w>
+            <pc>,</pc>
          </l>
          <l n="45">
-            <lb n="5"/>Intyba, Lactucas, Rumices, Naſturcia, Betam,
+            <lb n="5"/>
+            <w>Intyba</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Lactucas</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Rumices</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Naſturcia</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Betam</w>
+            <pc>,</pc>
          </l>
          <l n="46">
-            <lb n="6"/>Fœniculum, Oxalida, Hyſſopum, Crambenq́; Catonis,
+            <lb n="6"/>
+            <w>Fœniculum</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Oxalida</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Hyſſopum</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Crambenq<choice>
+                  <am>&combacute;;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w>Catonis</w>
+            <pc>,</pc>
          </l>
          <l n="47">
-            <lb n="7"/>Napos, Melones, Bulbos, Apiumq́; &amp; Anethum,
+            <lb n="7"/>
+            <w>Napos</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Melones</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Bulbos</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>Apiumq<choice>
+                  <am>&combacute;;</am>
+                  <ex>ue</ex>
+               </choice>
+            </w>
+            <c> </c>
+            <w><choice><am>&amp;</am><ex>et</ex></choice></w>
+            <c> </c>
+            <w>Anethum</w>
+            <pc>,</pc>
          </l>
          <l n="48">
-            <lb n="8"/>Quæ ſi fortè alijs Annona innaſcitur hortis
+            <lb n="8"/>
+            <w>Quæ</w>
+            <c> </c>
+            <w>ſi</w>
+            <c> </c>
+            <w>fortè</w>
+            <c> </c>
+            <w>alijs</w>
+            <c> </c>
+            <w>Annona</w>
+            <c> </c>
+            <w>innaſcitur</w>
+            <c> </c>
+            <w>hortis</w>
          </l>
          <l n="49">
-            <lb n="9"/>Largè etiam, tamen haud illis communia ſpectas
+            <lb n="9"/>
+            <w>Largè</w>
+            <c> </c>
+            <w>etiam</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>tamen</w>
+            <c> </c>
+            <w>haud</w>
+            <c> </c>
+            <w>illis</w>
+            <c> </c>
+            <w>communia</w>
+            <c> </c>
+            <w>ſpectas</w>
          </l>
          <l n="50">
-            <lb n="10"/>Cætera, tot nuſquam ſpectas peregrina, calentem
+            <lb n="10"/>
+            <w>Cætera</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>tot</w>
+            <c> </c>
+            <w>nuſquam</w>
+            <c> </c>
+            <w>ſpectas</w>
+            <c> </c>
+            <w>peregrina</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>calentem</w>
          </l>
          <l n="51">
-            <lb n="11"/>Nuſquam ſic hyemem, tot &amp; ambulacra inter odores,
+            <lb n="11"/>
+            <w>Nuſquam</w>
+            <c> </c>
+            <w>ſic</w>
+            <c> </c>
+            <w>hyemem</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>tot</w>
+            <c> </c>
+            <w><choice><am>&amp;</am><ex>et</ex></choice></w>
+            <c> </c>
+            <w>ambulacra</w>
+            <c> </c>
+            <w>inter</w>
+            <c> </c>
+            <w>odores</w>
+            <pc>,</pc>
          </l>
          <l n="52">
-            <lb n="12"/>Tam uiſuntur ad ornatum topiaria nuſquam,
+            <lb n="12"/>
+            <w>Tam</w>
+            <c> </c>
+            <w>uiſuntur</w>
+            <c> </c>
+            <w>ad</w>
+            <c> </c>
+            <w>ornatum</w>
+            <c> </c>
+            <w>topiaria</w>
+            <c> </c>
+            <w>nuſquam</w>
+            <pc>,</pc>
          </l>
          <l n="53">
-            <lb n="13"/>Nuſquam ſic uitreas æternis uſibus undas
+            <lb n="13"/>
+            <w>Nuſquam</w>
+            <c> </c>
+            <w>ſic</w>
+            <c> </c>
+            <w>uitreas</w>
+            <c> </c>
+            <w>æternis</w>
+            <c> </c>
+            <w>uſibus</w>
+            <c> </c>
+            <w>undas</w>
          </l>
          <l n="54">
-            <lb n="14"/>Canna ſub Vuifera præbet teſtudine, plenis
+            <lb n="14"/>
+            <w>Canna</w>
+            <c> </c>
+            <w>ſub</w>
+            <c> </c>
+            <w>Vuifera</w>
+            <c> </c>
+            <w>præbet</w>
+            <c> </c>
+            <w>teſtudine</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>plenis</w>
          </l>
          <l n="55">
-            <lb n="15"/>Quas buccis efflant, mingunt, torquent &amp; in altum
+            <lb n="15"/>
+            <w>Quas</w>
+            <c> </c>
+            <w>buccis</w>
+            <c> </c>
+            <w>efflant</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>mingunt</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>torquent</w>
+            <c> </c>
+            <w><choice><am>&amp;</am><ex>et</ex></choice></w>
+            <c> </c>
+            <w>in</w>
+            <c> </c>
+            <w>altum</w>
          </l>
          <l n="56">
-            <lb n="16"/>Tanquam ibi ludentes, conflati ex ære puelli.
+            <lb n="16"/>
+            <w>Tanquam</w>
+            <c> </c>
+            <w>ibi</w>
+            <c> </c>
+            <w>ludentes</w>
+            <pc>,</pc>
+            <c> </c>
+            <w>conflati</w>
+            <c> </c>
+            <w>ex</w>
+            <c> </c>
+            <w>ære</w>
+            <c> </c>
+            <w>puelli</w>
+            <pc>.</pc>
          </l>
       </body>
    </text>
